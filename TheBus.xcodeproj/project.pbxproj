@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A078F72532C9C3C47EF50F1D /* Pods_TheBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C8D9EAD1EE33C35263D891 /* Pods_TheBus.framework */; };
+		CDEA47111DCBE0660011F604 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEA47101DCBE0660011F604 /* AppDelegate.swift */; };
+		CDEA47181DCBE0660011F604 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEA47161DCBE0660011F604 /* Main.storyboard */; };
+		CDEA471A1DCBE0660011F604 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDEA47191DCBE0660011F604 /* Assets.xcassets */; };
+		CDEA471D1DCBE0660011F604 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEA471B1DCBE0660011F604 /* LaunchScreen.storyboard */; };
+		CDEA47281DCBE0660011F604 /* TheBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEA47271DCBE0660011F604 /* TheBusTests.swift */; };
+		CDEA47331DCBE0660011F604 /* TheBusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEA47321DCBE0660011F604 /* TheBusUITests.swift */; };
+		CDEA47411DCBE1E70011F604 /* StopSearchTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEA47401DCBE1E70011F604 /* StopSearchTC.swift */; };
+		CDEA47431DCBE22A0011F604 /* BusStops.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEA47421DCBE22A0011F604 /* BusStops.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDEA47241DCBE0660011F604 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDEA47051DCBE0660011F604 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDEA470C1DCBE0660011F604;
+			remoteInfo = TheBus;
+		};
+		CDEA472F1DCBE0660011F604 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDEA47051DCBE0660011F604 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDEA470C1DCBE0660011F604;
+			remoteInfo = TheBus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		370347AB18CC1AD515D91F9C /* Pods-TheBus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheBus/Pods-TheBus.debug.xcconfig"; sourceTree = "<group>"; };
+		48C8D9EAD1EE33C35263D891 /* Pods_TheBus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheBus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4F6C955A4BCC2D5D20B2B91 /* Pods-TheBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBus.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheBus/Pods-TheBus.release.xcconfig"; sourceTree = "<group>"; };
+		CDEA470D1DCBE0660011F604 /* TheBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDEA47101DCBE0660011F604 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CDEA47171DCBE0660011F604 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CDEA47191DCBE0660011F604 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDEA471C1DCBE0660011F604 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CDEA471E1DCBE0660011F604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDEA47231DCBE0660011F604 /* TheBusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheBusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDEA47271DCBE0660011F604 /* TheBusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBusTests.swift; sourceTree = "<group>"; };
+		CDEA47291DCBE0660011F604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDEA472E1DCBE0660011F604 /* TheBusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheBusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDEA47321DCBE0660011F604 /* TheBusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBusUITests.swift; sourceTree = "<group>"; };
+		CDEA47341DCBE0660011F604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDEA47401DCBE1E70011F604 /* StopSearchTC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopSearchTC.swift; sourceTree = "<group>"; };
+		CDEA47421DCBE22A0011F604 /* BusStops.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStops.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDEA470A1DCBE0660011F604 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A078F72532C9C3C47EF50F1D /* Pods_TheBus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDEA47201DCBE0660011F604 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDEA472B1DCBE0660011F604 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB61C2C030A60A46F161FAF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48C8D9EAD1EE33C35263D891 /* Pods_TheBus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDEA47041DCBE0660011F604 = {
+			isa = PBXGroup;
+			children = (
+				CDEA470F1DCBE0660011F604 /* TheBus */,
+				CDEA47261DCBE0660011F604 /* TheBusTests */,
+				CDEA47311DCBE0660011F604 /* TheBusUITests */,
+				CDEA470E1DCBE0660011F604 /* Products */,
+				DCFF501509DBE339EABD60BC /* Pods */,
+				AB61C2C030A60A46F161FAF4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CDEA470E1DCBE0660011F604 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDEA470D1DCBE0660011F604 /* TheBus.app */,
+				CDEA47231DCBE0660011F604 /* TheBusTests.xctest */,
+				CDEA472E1DCBE0660011F604 /* TheBusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDEA470F1DCBE0660011F604 /* TheBus */ = {
+			isa = PBXGroup;
+			children = (
+				CDEA47101DCBE0660011F604 /* AppDelegate.swift */,
+				CDEA47161DCBE0660011F604 /* Main.storyboard */,
+				CDEA47401DCBE1E70011F604 /* StopSearchTC.swift */,
+				CDEA47421DCBE22A0011F604 /* BusStops.swift */,
+				CDEA47191DCBE0660011F604 /* Assets.xcassets */,
+				CDEA471B1DCBE0660011F604 /* LaunchScreen.storyboard */,
+				CDEA471E1DCBE0660011F604 /* Info.plist */,
+			);
+			path = TheBus;
+			sourceTree = "<group>";
+		};
+		CDEA47261DCBE0660011F604 /* TheBusTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDEA47271DCBE0660011F604 /* TheBusTests.swift */,
+				CDEA47291DCBE0660011F604 /* Info.plist */,
+			);
+			path = TheBusTests;
+			sourceTree = "<group>";
+		};
+		CDEA47311DCBE0660011F604 /* TheBusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CDEA47321DCBE0660011F604 /* TheBusUITests.swift */,
+				CDEA47341DCBE0660011F604 /* Info.plist */,
+			);
+			path = TheBusUITests;
+			sourceTree = "<group>";
+		};
+		DCFF501509DBE339EABD60BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				370347AB18CC1AD515D91F9C /* Pods-TheBus.debug.xcconfig */,
+				A4F6C955A4BCC2D5D20B2B91 /* Pods-TheBus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDEA470C1DCBE0660011F604 /* TheBus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDEA47371DCBE0660011F604 /* Build configuration list for PBXNativeTarget "TheBus" */;
+			buildPhases = (
+				E2F7306CC9917EBC1E174EE6 /* [CP] Check Pods Manifest.lock */,
+				CDEA47091DCBE0660011F604 /* Sources */,
+				CDEA470A1DCBE0660011F604 /* Frameworks */,
+				CDEA470B1DCBE0660011F604 /* Resources */,
+				128BC97F6DDBF0D01FA7D7F2 /* [CP] Embed Pods Frameworks */,
+				E4ACA215D355D7031CE43D28 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheBus;
+			productName = TheBus;
+			productReference = CDEA470D1DCBE0660011F604 /* TheBus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDEA47221DCBE0660011F604 /* TheBusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDEA473A1DCBE0660011F604 /* Build configuration list for PBXNativeTarget "TheBusTests" */;
+			buildPhases = (
+				CDEA471F1DCBE0660011F604 /* Sources */,
+				CDEA47201DCBE0660011F604 /* Frameworks */,
+				CDEA47211DCBE0660011F604 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDEA47251DCBE0660011F604 /* PBXTargetDependency */,
+			);
+			name = TheBusTests;
+			productName = TheBusTests;
+			productReference = CDEA47231DCBE0660011F604 /* TheBusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CDEA472D1DCBE0660011F604 /* TheBusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDEA473D1DCBE0660011F604 /* Build configuration list for PBXNativeTarget "TheBusUITests" */;
+			buildPhases = (
+				CDEA472A1DCBE0660011F604 /* Sources */,
+				CDEA472B1DCBE0660011F604 /* Frameworks */,
+				CDEA472C1DCBE0660011F604 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDEA47301DCBE0660011F604 /* PBXTargetDependency */,
+			);
+			name = TheBusUITests;
+			productName = TheBusUITests;
+			productReference = CDEA472E1DCBE0660011F604 /* TheBusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDEA47051DCBE0660011F604 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = itsugawakun;
+				TargetAttributes = {
+					CDEA470C1DCBE0660011F604 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = WH97YT6VM2;
+						ProvisioningStyle = Automatic;
+					};
+					CDEA47221DCBE0660011F604 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = WH97YT6VM2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CDEA470C1DCBE0660011F604;
+					};
+					CDEA472D1DCBE0660011F604 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = WH97YT6VM2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CDEA470C1DCBE0660011F604;
+					};
+				};
+			};
+			buildConfigurationList = CDEA47081DCBE0660011F604 /* Build configuration list for PBXProject "TheBus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDEA47041DCBE0660011F604;
+			productRefGroup = CDEA470E1DCBE0660011F604 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDEA470C1DCBE0660011F604 /* TheBus */,
+				CDEA47221DCBE0660011F604 /* TheBusTests */,
+				CDEA472D1DCBE0660011F604 /* TheBusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDEA470B1DCBE0660011F604 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDEA471D1DCBE0660011F604 /* LaunchScreen.storyboard in Resources */,
+				CDEA471A1DCBE0660011F604 /* Assets.xcassets in Resources */,
+				CDEA47181DCBE0660011F604 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDEA47211DCBE0660011F604 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDEA472C1DCBE0660011F604 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		128BC97F6DDBF0D01FA7D7F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheBus/Pods-TheBus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2F7306CC9917EBC1E174EE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E4ACA215D355D7031CE43D28 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheBus/Pods-TheBus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDEA47091DCBE0660011F604 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDEA47431DCBE22A0011F604 /* BusStops.swift in Sources */,
+				CDEA47411DCBE1E70011F604 /* StopSearchTC.swift in Sources */,
+				CDEA47111DCBE0660011F604 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDEA471F1DCBE0660011F604 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDEA47281DCBE0660011F604 /* TheBusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDEA472A1DCBE0660011F604 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDEA47331DCBE0660011F604 /* TheBusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDEA47251DCBE0660011F604 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDEA470C1DCBE0660011F604 /* TheBus */;
+			targetProxy = CDEA47241DCBE0660011F604 /* PBXContainerItemProxy */;
+		};
+		CDEA47301DCBE0660011F604 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDEA470C1DCBE0660011F604 /* TheBus */;
+			targetProxy = CDEA472F1DCBE0660011F604 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CDEA47161DCBE0660011F604 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDEA47171DCBE0660011F604 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CDEA471B1DCBE0660011F604 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDEA471C1DCBE0660011F604 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDEA47351DCBE0660011F604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CDEA47361DCBE0660011F604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDEA47381DCBE0660011F604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 370347AB18CC1AD515D91F9C /* Pods-TheBus.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WH97YT6VM2;
+				INFOPLIST_FILE = TheBus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.itsugawakun.TheBus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CDEA47391DCBE0660011F604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4F6C955A4BCC2D5D20B2B91 /* Pods-TheBus.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WH97YT6VM2;
+				INFOPLIST_FILE = TheBus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.itsugawakun.TheBus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CDEA473B1DCBE0660011F604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = WH97YT6VM2;
+				INFOPLIST_FILE = TheBusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.itsugawakun.TheBusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheBus.app/TheBus";
+			};
+			name = Debug;
+		};
+		CDEA473C1DCBE0660011F604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = WH97YT6VM2;
+				INFOPLIST_FILE = TheBusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.itsugawakun.TheBusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheBus.app/TheBus";
+			};
+			name = Release;
+		};
+		CDEA473E1DCBE0660011F604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = WH97YT6VM2;
+				INFOPLIST_FILE = TheBusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.itsugawakun.TheBusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TheBus;
+			};
+			name = Debug;
+		};
+		CDEA473F1DCBE0660011F604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = WH97YT6VM2;
+				INFOPLIST_FILE = TheBusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.itsugawakun.TheBusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TheBus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDEA47081DCBE0660011F604 /* Build configuration list for PBXProject "TheBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDEA47351DCBE0660011F604 /* Debug */,
+				CDEA47361DCBE0660011F604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDEA47371DCBE0660011F604 /* Build configuration list for PBXNativeTarget "TheBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDEA47381DCBE0660011F604 /* Debug */,
+				CDEA47391DCBE0660011F604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDEA473A1DCBE0660011F604 /* Build configuration list for PBXNativeTarget "TheBusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDEA473B1DCBE0660011F604 /* Debug */,
+				CDEA473C1DCBE0660011F604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDEA473D1DCBE0660011F604 /* Build configuration list for PBXNativeTarget "TheBusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDEA473E1DCBE0660011F604 /* Debug */,
+				CDEA473F1DCBE0660011F604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDEA47051DCBE0660011F604 /* Project object */;
+}
