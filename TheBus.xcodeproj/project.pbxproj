@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A078F72532C9C3C47EF50F1D /* Pods_TheBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C8D9EAD1EE33C35263D891 /* Pods_TheBus.framework */; };
+		CD8BE0191DD28A2A00B9281E /* ArrivalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8BE0181DD28A2A00B9281E /* ArrivalVC.swift */; };
+		CD8BE01B1DD292FA00B9281E /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8BE01A1DD292FA00B9281E /* TestVC.swift */; };
+		CDC42D791DD1EAC80006A6FB /* SocketHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC42D781DD1EAC80006A6FB /* SocketHandlers.swift */; };
 		CDEA47111DCBE0660011F604 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEA47101DCBE0660011F604 /* AppDelegate.swift */; };
 		CDEA47181DCBE0660011F604 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEA47161DCBE0660011F604 /* Main.storyboard */; };
 		CDEA471A1DCBE0660011F604 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDEA47191DCBE0660011F604 /* Assets.xcassets */; };
@@ -15,7 +18,6 @@
 		CDEA47281DCBE0660011F604 /* TheBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEA47271DCBE0660011F604 /* TheBusTests.swift */; };
 		CDEA47331DCBE0660011F604 /* TheBusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEA47321DCBE0660011F604 /* TheBusUITests.swift */; };
 		CDEA47411DCBE1E70011F604 /* StopSearchTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEA47401DCBE1E70011F604 /* StopSearchTC.swift */; };
-		CDEA47431DCBE22A0011F604 /* BusStops.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEA47421DCBE22A0011F604 /* BusStops.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +37,35 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CD72C24B1DCFD676007D0E6E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		370347AB18CC1AD515D91F9C /* Pods-TheBus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheBus/Pods-TheBus.debug.xcconfig"; sourceTree = "<group>"; };
 		48C8D9EAD1EE33C35263D891 /* Pods_TheBus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheBus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F6C955A4BCC2D5D20B2B91 /* Pods-TheBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBus.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheBus/Pods-TheBus.release.xcconfig"; sourceTree = "<group>"; };
+		CD72C2281DCFD676007D0E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		CD72C22A1DCFD676007D0E6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD72C22C1DCFD676007D0E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD72C2371DCFD676007D0E6E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		CD72C2381DCFD676007D0E6E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		CD72C23A1DCFD676007D0E6E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		CD72C23C1DCFD676007D0E6E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		CD72C23E1DCFD676007D0E6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD72C2401DCFD676007D0E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD8BE0181DD28A2A00B9281E /* ArrivalVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrivalVC.swift; sourceTree = "<group>"; };
+		CD8BE01A1DD292FA00B9281E /* TestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
+		CDC42D781DD1EAC80006A6FB /* SocketHandlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketHandlers.swift; sourceTree = "<group>"; };
 		CDEA470D1DCBE0660011F604 /* TheBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDEA47101DCBE0660011F604 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDEA47171DCBE0660011F604 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,7 +79,6 @@
 		CDEA47321DCBE0660011F604 /* TheBusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBusUITests.swift; sourceTree = "<group>"; };
 		CDEA47341DCBE0660011F604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDEA47401DCBE1E70011F604 /* StopSearchTC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopSearchTC.swift; sourceTree = "<group>"; };
-		CDEA47421DCBE22A0011F604 /* BusStops.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStops.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,12 +115,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CD72C2261DCFD676007D0E6E /* watchDaBus */ = {
+			isa = PBXGroup;
+			children = (
+				CD72C2271DCFD676007D0E6E /* Interface.storyboard */,
+				CD72C22A1DCFD676007D0E6E /* Assets.xcassets */,
+				CD72C22C1DCFD676007D0E6E /* Info.plist */,
+			);
+			path = watchDaBus;
+			sourceTree = "<group>";
+		};
+		CD72C2351DCFD676007D0E6E /* watchDaBus Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CD72C2381DCFD676007D0E6E /* InterfaceController.swift */,
+				CD72C23A1DCFD676007D0E6E /* ExtensionDelegate.swift */,
+				CD72C23C1DCFD676007D0E6E /* NotificationController.swift */,
+				CD72C23E1DCFD676007D0E6E /* Assets.xcassets */,
+				CD72C2401DCFD676007D0E6E /* Info.plist */,
+				CD72C2361DCFD676007D0E6E /* Supporting Files */,
+			);
+			path = "watchDaBus Extension";
+			sourceTree = "<group>";
+		};
+		CD72C2361DCFD676007D0E6E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD72C2371DCFD676007D0E6E /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		CDEA47041DCBE0660011F604 = {
 			isa = PBXGroup;
 			children = (
 				CDEA470F1DCBE0660011F604 /* TheBus */,
 				CDEA47261DCBE0660011F604 /* TheBusTests */,
 				CDEA47311DCBE0660011F604 /* TheBusUITests */,
+				CD72C2261DCFD676007D0E6E /* watchDaBus */,
+				CD72C2351DCFD676007D0E6E /* watchDaBus Extension */,
 				CDEA470E1DCBE0660011F604 /* Products */,
 				DCFF501509DBE339EABD60BC /* Pods */,
 				AB61C2C030A60A46F161FAF4 /* Frameworks */,
@@ -115,9 +174,11 @@
 			isa = PBXGroup;
 			children = (
 				CDEA47101DCBE0660011F604 /* AppDelegate.swift */,
+				CD8BE01A1DD292FA00B9281E /* TestVC.swift */,
 				CDEA47161DCBE0660011F604 /* Main.storyboard */,
 				CDEA47401DCBE1E70011F604 /* StopSearchTC.swift */,
-				CDEA47421DCBE22A0011F604 /* BusStops.swift */,
+				CD8BE0181DD28A2A00B9281E /* ArrivalVC.swift */,
+				CDC42D781DD1EAC80006A6FB /* SocketHandlers.swift */,
 				CDEA47191DCBE0660011F604 /* Assets.xcassets */,
 				CDEA471B1DCBE0660011F604 /* LaunchScreen.storyboard */,
 				CDEA471E1DCBE0660011F604 /* Info.plist */,
@@ -165,6 +226,7 @@
 				CDEA470B1DCBE0660011F604 /* Resources */,
 				128BC97F6DDBF0D01FA7D7F2 /* [CP] Embed Pods Frameworks */,
 				E4ACA215D355D7031CE43D28 /* [CP] Copy Pods Resources */,
+				CD72C24B1DCFD676007D0E6E /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
@@ -223,7 +285,7 @@
 				TargetAttributes = {
 					CDEA470C1DCBE0660011F604 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = WH97YT6VM2;
+						DevelopmentTeam = KF542JFAHK;
 						ProvisioningStyle = Automatic;
 					};
 					CDEA47221DCBE0660011F604 = {
@@ -340,7 +402,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDEA47431DCBE22A0011F604 /* BusStops.swift in Sources */,
+				CD8BE01B1DD292FA00B9281E /* TestVC.swift in Sources */,
+				CD8BE0191DD28A2A00B9281E /* ArrivalVC.swift in Sources */,
+				CDC42D791DD1EAC80006A6FB /* SocketHandlers.swift in Sources */,
 				CDEA47411DCBE1E70011F604 /* StopSearchTC.swift in Sources */,
 				CDEA47111DCBE0660011F604 /* AppDelegate.swift in Sources */,
 			);
@@ -378,6 +442,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CD72C2271DCFD676007D0E6E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD72C2281DCFD676007D0E6E /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		CDEA47161DCBE0660011F604 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -435,8 +507,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -479,8 +551,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -494,11 +566,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 370347AB18CC1AD515D91F9C /* Pods-TheBus.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WH97YT6VM2;
+				DEVELOPMENT_TEAM = KF542JFAHK;
 				INFOPLIST_FILE = TheBus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.itsugawakun.TheBus;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itsugawakun808.TheBus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -508,11 +581,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A4F6C955A4BCC2D5D20B2B91 /* Pods-TheBus.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WH97YT6VM2;
+				DEVELOPMENT_TEAM = KF542JFAHK;
 				INFOPLIST_FILE = TheBus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.itsugawakun.TheBus;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itsugawakun808.TheBus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

@@ -11,6 +11,12 @@ import UIKit
 class StopSearchTC: UITableViewController {
     
     var app = UIApplication.shared.delegate as! AppDelegate
+    var stopNames = [String]()
+    var stopNumbers = [String]()
+    let handlers = SocketHandlers()
+    let searchController = UISearchController(searchResultsController: nil)
+    var searchTimestamp = 0
+    var sendRequest:String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +26,46 @@ class StopSearchTC: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        self.tableView!.dataSource = self
+        self.tableView!.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
+        
     }
+    
+    func receivedResults(results: Array<NSDictionary>, requestTimestamp: Int?) {
+        print("searchTimestamp: \(searchTimestamp), requestTimestamp: \(requestTimestamp)")
+        /*if searchTimestamp != requestTimestamp! {
+            // Ignore any search results other than those for the last search performed
+            print("Ignored")
+            
+            return
+        }*/
+        stopNames = []
+        stopNumbers = []
+        print("Table view")
+        for i in 0 ..< results.count {
+            self.stopNames.append(results[i]["Name"] as! String)
+            self.stopNumbers.append(results[i]["Number"] as! String)
+        }
+        
+        //print(self.stopNames)
+        self.title = "Search Stop"
+        tableView.reloadData()
+    }
+    
+    @IBOutlet weak var searchBar: UISearchBar!
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        let typedTimestamp = Int(NSDate().timeIntervalSince1970 * 1000)
+        print("typedTimeStamp: \(typedTimestamp)")
+        searchTimestamp = self.handlers.searchStop(searchString: searchText, callback: self.receivedResults)
+        tableView.reloadData()
+        
+    }
+    
+   
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -29,25 +74,26 @@ class StopSearchTC: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    /*override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0
-    }
+    }*/
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.stopNames.count;
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
+        cell.textLabel?.text = "\(self.stopNames[indexPath.row])"
+        cell.detailTextLabel?.text = "Stop \(self.stopNumbers[indexPath.row])"
+        cell.accessoryType = .disclosureIndicator
+        //print(self.stopNames[indexPath.row])
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -84,14 +130,30 @@ class StopSearchTC: UITableViewController {
     }
     */
 
-    /*
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let indexPath = tableView.indexPathForSelectedRow!
+        //let currentCell = tableView.cellForRow(at: indexPath) as UITableViewCell!;
+        
+        sendRequest = self.stopNumbers[indexPath.row]
+        print(sendRequest)
+        performSegue(withIdentifier: "showArrivals", sender: self)
+    }
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if (segue.identifier == "showArrivals") {
+            let viewController = segue.destination as! ArrivalVC
+            viewController.passedValue = sendRequest
+            viewController.passedTimestamp = Int(NSDate().timeIntervalSince1970 * 1000)
+            print("\(Int(NSDate().timeIntervalSince1970 * 1000))")
+        }
+        
     }
-    */
+    
 
 }
